@@ -1,27 +1,39 @@
 package utilsEtc;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HomeWebsite {
-	 WebDriver driver;
+	public static WebDriver driver;
+	 
+	 
 	
 	public  HomeWebsite (WebDriver received) { 
 		
-	driver	 = received;
+	this.driver	 = received;
 		
 	}
 	
+	public HomeWebsite() {
+		
+	};
 	
-	
-
 
 	public void systemSetPrpr () {
 		
 		System.setProperty("webdriver.chrome.driver","/Users/apple/Desktop/QA/driver-1/chromedriver");
 		
 		driver = new ChromeDriver();
-		driver.get("https://www.saucedemo.com/");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		driver.manage().window().maximize();
+		driver.get("https://www.usda.gov/");
+		
+//		System.out.println(driver.getCurrentUrl());
+//		driver.findElement(By.xpath("//*[@id=\"block-usda-main-menu\"]/ul/li[4]/button/span")).click();
 	}
 	
 
