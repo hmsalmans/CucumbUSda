@@ -32,8 +32,7 @@ public class HomeWebsite {
 		driver.manage().window().maximize();
 		driver.get("https://www.usda.gov/");
 		
-//		System.out.println(driver.getCurrentUrl());
-//		driver.findElement(By.xpath("//*[@id=\"block-usda-main-menu\"]/ul/li[4]/button/span")).click();
+
 	}
 	
 
