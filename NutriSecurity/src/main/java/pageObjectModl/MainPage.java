@@ -32,13 +32,13 @@ public class MainPage extends HomeWebsite {
 		
 	 
 		Actions action = new Actions(driver); 
+		
 		 WebElement elmnt = driver.findElement(By.xpath("//*[@id=\"side-nav-4\"]/ul/li[4]/a"));
 		 
 		 action.moveToElement(elmnt);//have to use for mouse hover actions
-//		 WebDriverWait wait = new WebDriverWait(driver,30);
-//		 wait.until(ExpectedConditions.elementToBeClickable(elmnt));
-		 action.click().build().perform();
-		 //using click action method
+
+		 action.click().build().perform();//using click action method
+		 
 		 
 		 	 
 	}
