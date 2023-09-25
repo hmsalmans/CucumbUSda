@@ -60,5 +60,25 @@ public class StepDefinitions {
 	}
 	
 	
+	
+	@Given("I am on Food and Nutritionl Security page")
+	public void i_am_on_food_and_nutritionl_security_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("I click on play link")
+	public void i_click_on_play_link() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Video will play")
+	public void video_will_play() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	
 
 }
