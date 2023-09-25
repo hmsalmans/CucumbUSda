@@ -7,13 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HomeWebsite {
+	
 	public static WebDriver driver;
 	 
 	 
 	
 	public  HomeWebsite (WebDriver received) { 
 		
-	this.driver	 = received;
+	driver	 = received;
 		
 	}
 	
