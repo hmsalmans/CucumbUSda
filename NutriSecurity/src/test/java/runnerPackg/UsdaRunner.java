@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		features = "Features",
 		glue     = "SteDefPckg",
 		plugin   = { "pretty", "html: target/report.html" },
-		tags = "@tag1"
+				tags = "@tag1"
+				
 		
 		)
 

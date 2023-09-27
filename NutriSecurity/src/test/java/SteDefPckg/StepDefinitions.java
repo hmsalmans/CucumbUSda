@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.en.*;
-import pageObjectModl.MainPage;
+import pageObjectModl.*;
 
 import utilsEtc.*;
 
@@ -25,6 +25,8 @@ public class StepDefinitions {
 	 HomeWebsite obj = new HomeWebsite(chroming);// object of HomeWebsite class with sending driver from here.
      
      MainPage main = new MainPage(); //object of MainPage
+     
+     NutritionPage nutri = new NutritionPage(); // object of NutritionalPage
 	 
 	 
 	@Given("I am on home page")
@@ -45,7 +47,7 @@ public class StepDefinitions {
 	}
 
 	@When("Select food and security title")
-	public void select_food_and_security_title()  {
+	public void select_food_and_security_title() throws InterruptedException  {
 		
 		main.foodAndNutriSelect();
 	   
@@ -63,20 +65,19 @@ public class StepDefinitions {
 	
 	@Given("I am on Food and Nutritionl Security page")
 	public void i_am_on_food_and_nutritionl_security_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		
 	}
 
 	@When("I click on play link")
 	public void i_click_on_play_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		nutri.playVideo();
+	    
 	}
 
 	@Then("Video will play")
 	public void video_will_play() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
+		
 	}
 
 	
