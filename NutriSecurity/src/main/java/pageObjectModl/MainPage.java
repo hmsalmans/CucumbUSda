@@ -28,7 +28,7 @@ public class MainPage extends HomeWebsite {
 		
 		}
 	
-	public void foodAndNutriSelect()  {
+	public void foodAndNutriSelect() throws InterruptedException  {
 		
 	 
 		Actions action = new Actions(driver); 
@@ -38,6 +38,7 @@ public class MainPage extends HomeWebsite {
 		 action.moveToElement(elmnt);//have to use for mouse hover actions
 
 		 action.click().build().perform();//using click action method
+		 Thread.sleep(7000);
 		 
 		 
 		 	 

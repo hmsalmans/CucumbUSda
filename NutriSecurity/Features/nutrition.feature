@@ -7,6 +7,6 @@ Feature: Playing video in Nutrition page
 
   @tag2
   Scenario: Youtube video playing by clicking
-    Given I am on Food and Nutritionl Security page 
-    When I click on play link
-    Then Video will play
+   Given I am on Food and Nutritionl Security page 
+   When I click on play link
+   Then Video will play
