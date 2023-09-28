@@ -11,6 +11,6 @@ Feature: Getting to Food and Nutional Security Page
     When I click on Priorities tab
     And Select food and security title
     Then A new page opens 
-     When I click on play link
+    
     
     
