@@ -9,7 +9,7 @@ public class NutritionPage extends HomeWebsite {
 	
 	public void playVideo() {
 		
-		driver.findElement(By.xpath("//*[@id=\"movie_player\"]/div[4]/button")).click();
+		driver.findElement(By.xpath("//*[@id=\"block-usda-content\"]/article/div/p[2]/a")).click();
 		
 	}
 	
