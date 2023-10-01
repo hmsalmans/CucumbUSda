@@ -69,7 +69,7 @@ public class StepDefinitions {
 	}
 
 	@When("I click on play link")
-	public void i_click_on_play_link() {
+	public void i_click_on_play_link() throws InterruptedException {
 		nutri.playVideo();
 	    
 	}
