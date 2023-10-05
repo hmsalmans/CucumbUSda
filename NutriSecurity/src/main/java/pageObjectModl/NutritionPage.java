@@ -25,7 +25,7 @@ public class NutritionPage extends HomeWebsite {
 		
 		
 		
-		driver.findElement(By.xpath("//*[@id=\"block-usda-content\"]/article/div/p[2]/a")).click();
+		driver.findElement(By.className("video-embed-field-provider-youtube video-embed-field-responsive-video")).click();
 		
 		
 	
